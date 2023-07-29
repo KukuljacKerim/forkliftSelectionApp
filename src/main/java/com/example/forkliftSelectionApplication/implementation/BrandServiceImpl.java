@@ -26,6 +26,7 @@ public class BrandServiceImpl implements BrandService {
 
 	@Override
 	public List<BrandEntity> findAll() {
+		System.out.println("Find All " + brandDAO.findAll());
 		return brandDAO.findAll();
 	}
 
